@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Avvocati</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const caption = document.getElementById("lightbox-caption");
+
+    lightbox.style.display = "block";
+    lightboxImg.src = img.src;
+    caption.innerText = img.nextElementSibling.innerText;
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+<body>
+  <header>
+    <h1>Bot Avvocati</h1>
+    <p>Automazione per il reparto giuridico del tuo server RP</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Cosa fa il bot?</h2>
+      <p>
+        Questo bot è pensato per aiutare il <strong>reparto degli avvocati</strong> nel gestire tutto ciò che riguarda il calcolo degli stipendi.
+        Automatizza ogni passaggio, rendendo tutto più efficiente e trasparente.
+      </p>
+    </section>
+
+
+    <section class="intro">
+      <h2>A cosa serve?</h2>
+      <p>
+        Gli avvocati nel server in cui gioco hanno pochi compiti ma ognuno di essi richiede tempo soprattuto la registrazione dei servizzi svolti.
+        I servizzi sono processi, assistenza alle celle e consulenze legali, questi rientrano nei "bonus".
+        Dopo abbiamo la pulizia della fedine penale a altri documenti questi rientrano nelle "fatture".
+        Ovviamente siamo tutti a conoscenza che un avvocato non fa solo questo ma bisogna anche capire la differenza tra gioco e realtà.
+      </p>
+    </section>
+
+        <section class="intro">
+      <h2>Funzionalità principali</h2>
+      <ul>
+        <p>Basato su <strong>comandi</strong></p>
+        <p>Tracciamento automatico delle <strong>ore di lavoro</strong></p>
+        <p>Database sicuro e veloce</p>
+        <p>Sistema log e backup</p>
+        <p>Conteggio di <strong>processi completati</strong></p>
+        <p>Registro delle <strong>cause vinte e perse</strong></p>
+        <p>Calcolo settimanale automatico dello <strong>stipendio</strong> su base e percentuali personalizzabile</p>
+        <p>Visualizzazione dati in tempo reale tramite comandi Discord</p>
+      </ul>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Galleria immagini</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="image/comandoAnnuncio.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Questo comando apre un menu per mandare un annuncio a tutti gli avvocati</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/comandoFattura.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Questo comando registra l'importo della fattura nel contro dell'avvocato e manda un "log"</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/comandoBonus.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Questo comando registra un extra a seconda del bonus eseguito nel contro dell'avvocato e manda un "log"</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/embedStipendi.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Tramite un comando si possono visualizzare gli stipendi tutti insieme o uno a uno</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/embedAnnuncio.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Questo è il menu del comando /annuncio</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/logFatture.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Questo è il "log" per far visualizzare la fattura alla dirigenza</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/logBonus.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Questo è il "log" per far visualizzare il bonus alla dirigenza</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/comandoGestione.png" alt="XXX" onclick="openLightbox(this)">
+          <p>Questo comando permette alla dirigenza di resettare il database con alcune scelte</p>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" class="lightbox-content">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+
+    <section class="intro">
+      <p>Il bot possiede altre funzioni ma non vedo il motivo di mostrarle vista la loro banalità ma potete ammirare il "back-end" del bot.</p>
+    </section> 
+
+    <div class="bottoni">
+      <a href="index.html" class="btn">Torna alla Home</a>
+      <a href="tecnica.html" class="btn">Vai alla tecnica del bot</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creato da Niccolò Mazzi - 2025</p>
+  </footer>
+</body>
+</html>
