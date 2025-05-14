@@ -1,1 +1,112 @@
-<p>  QUESTA PAGINA E' DA FARE</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Agenti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const caption = document.getElementById("lightbox-caption");
+
+    lightbox.style.display = "block";
+    lightboxImg.src = img.src;
+    caption.innerText = img.nextElementSibling.innerText;
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+<body>
+  <header>
+    <h1>Bot Agenti</h1>
+    <p>Automazione per il reparto di polizia del tuo server RP</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Cosa fa il bot?</h2>
+      <p>
+        Questo bot è stato creato per aiutare il <strong>reparto agenti</strong> nel scorte effettuate, incentivi e turni.
+        Automatizza ogni fase operativa rendendo il lavoro più rapido, sicuro e ordinato.
+      </p>
+    </section>
+
+    <section class="intro">
+      <h2>A cosa serve?</h2>
+      <p>
+        Nel server, gli agenti hanno molti incarichi che vanno tracciati. Il bot gestisce tutto ciò che riguarda <strong>scorte di funzionari, turni ed incentivi settimanali</strong>.
+        Permette anche visualizzare statistiche settimanali e una <strong>classifica</strong> in base a due valori numero di scorte o minuti di servizio.
+      </p>
+    </section>
+
+    <section class="intro">
+      <h2>Funzionalità principali</h2>
+      <ul>
+        <p>Comando per registrare <strong>scorte</strong></p>
+        <p>Tracciamento <strong>turni</strong> con pannello start e stop turni</p>
+        <p>Database protetto e ottimizzato</p>
+        <p>Log in tempo reale e sistema di backup</p>
+        <p>Calcolo automatico dello <strong>stipendio</strong> in base all’attività</p>
+        <p>classifica su Discord per <strong>visualizzare i migliori</strong></p>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h2>Galleria immagini</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="image/comandoScorta.png" alt="///" onclick="openLightbox(this)">
+          <p>Comando per registrare una scorta di funzionario</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/pannelloCartellinoLog.png" alt="///" onclick="openLightbox(this)">
+          <p>Pannello start e stop turno</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/classifica.png" alt="///" onclick="openLightbox(this)">
+          <p>Classifica degli agenti per due criteri</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/dirigenzaFos.png" alt="///" onclick="openLightbox(this)">
+          <p>Controllo database direttamente da Discord, solo per dirigenti pre autorizzati, a secondo del comando il campo agente può rimanere vuoto</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/logScorta.png" alt="///" onclick="openLightbox(this)">
+          <p>Log di ogni scorta con orario, agenti e chi è stato scortato</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/logTurni.png" alt="///" onclick="openLightbox(this)">
+          <p>Log di fine turno con minuti eseguiti e orario di inizio</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" class="lightbox-content">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <section class="intro">
+      <p>Il bot possiede molte funzioni minori come note, commenti o suggerimenti ma sono pensate per un utilizzo interno e diretto solo al personale.</p>
+    </section>
+
+    <div class="bottoni">
+      <a href="index.html" class="btn">Torna alla Home</a>
+      <a href="tecnica.html" class="btn">Vai alla tecnica dei due bot</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creato da Niccolò Mazzi - 2025</p>
+  </footer>
+</body>
+</html>
